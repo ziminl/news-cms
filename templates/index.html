@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News CMS</title>
+</head>
+<body>
+    <h1>News CMS</h1>
+
+    <h2>Add Article</h2>
+    <a href="/add">Add New Article</a>
+
+    <h2>Articles</h2>
+    {% for article in articles %}
+        <h3>{{ article.title }}</h3>
+        <p>{{ article.content }}</p>
+    {% endfor %}
+</body>
+</html>
